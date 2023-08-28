@@ -1,0 +1,125 @@
+//Link do site em HTML e do css 
+//não consegui mandar o arquivo então estou enviando o link dos dois arquivos e o códigos abaixo.
+
+file:///C:/Users/rafae/Downloads/index%20(1).html
+file:///C:/Users/rafae/Downloads/style.css
+
+//Código HTML 
+<html>
+    <head>
+     <title>GreenStyle Hub</title>   
+    <link href="style.css" rel = "stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale-1.0" />
+    </head>
+    
+    
+    <body>
+    
+    <header>
+        <div class="center">
+            <div class="logo"><img src= "Logo/GSs.png"/></div><!--logo-->
+            <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Contato</a>
+        <a href="#">Produtos</a>  
+        </div><!--menu-->
+        </div><!--center-->
+        <nav class="menu-lateral">
+            <i class="bi bi-list-task"></i>
+
+            <div class="btn-expandir">
+                <ul>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-person-fill"></i></span>
+                            <span class="txt-link">Minha Conta</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-basket2-fill"></i></span>
+                            <span class="txt-link">Carrinho</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-heart-fill"></i></span>
+                            <span class="txt-link">Favoritos</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-instagram"></i></span>
+                            <span class="txt-link">Siga-nos</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div><!--btn-expandir-->
+        </nav><!--menu-lateral-->
+    </header>
+    </body>
+</html>
+
+
+//Código CSS 
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+nav.menu-lateral{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0 40px 1%;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+.menu-lateral {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn-expandir >i{
+    color: rgb(253, 253, 253);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+header{
+    padding: 20px;
+}
+.logo{
+    width: 25%;
+} 
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+
+}
+.menu a{
+color: black;
+text-decoration: none;
+font-weight: bold;
+margin-right: 15px;
+}
